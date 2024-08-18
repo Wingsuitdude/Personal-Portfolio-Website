@@ -37,14 +37,12 @@ const skills = {
     { name: 'MongoDB', icon: <SiMongodb /> },
   ],
   DevOps: [
-    { name: 'Vite', icon: <SiVite /> },
     { name: 'Cloudflare', icon: <SiCloudflare /> },
     { name: 'GitHub', icon: <FaGithub /> },
   ],
   'Web3 & Blockchain': [
     { name: 'Solidity', icon: <SiSolidity /> },
     { name: 'Smart Contracts', icon: <SiSolidity /> },
-    { name: 'Web3', icon: <SiWeb3Dotjs /> },
   ],
   Other: [
     { name: 'Mobile App Development', icon: <FaReact /> },
