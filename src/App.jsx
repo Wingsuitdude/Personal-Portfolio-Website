@@ -23,7 +23,7 @@ const projects = [
   },
   { 
     title: 'Siam Care', 
-    description: 'Thailand community EMS app enhancing emergency response. Features include geolocation rescue beacons and seamless API integration with local authorities as well as registered users for rapid medical assistance in emergency situations.', 
+    description: 'Thailand community EMS app enhancing emergency response. Features include geolocation rescue beacons and seamless integration with local authorities as well as registered users for rapid medical assistance in emergency situations.', 
     link: 'https://siam-care.com'
   },
 ];
