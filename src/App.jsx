@@ -3,6 +3,13 @@ import './App.css';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub } from 'react-icons/fa';
 import { SiTailwindcss, SiExpress, SiMongodb, SiCloudflare } from 'react-icons/si';
 
+// Custom Clerk SVG icon
+const ClerkIcon = () => (
+  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm0-18.5c-4.687 0-8.5 3.813-8.5 8.5s3.813 8.5 8.5 8.5 8.5-3.813 8.5-8.5-3.813-8.5-8.5-8.5zm0 15.5c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/>
+  </svg>
+);
+
 const projects = [
   { 
     title: 'Our Thailand Wedding', 
@@ -34,10 +41,10 @@ const skills = {
     { name: 'Express', icon: <SiExpress /> },
     { name: 'MongoDB', icon: <SiMongodb /> },
   ],
-  
   DevOps: [
     { name: 'Cloudflare', icon: <SiCloudflare /> },
     { name: 'GitHub', icon: <FaGithub /> },
+    { name: 'Clerk', icon: <ClerkIcon /> },
   ],
 };
 
@@ -65,7 +72,6 @@ export default function App() {
             <span className="inline-block px-3 py-1 bg-purple-700 rounded-full mr-2">Full-Stack Web Applications</span>
           </p>
           <div className="flex justify-center space-x-6 mb-8">
-            
             <a href="https://linkedin.com/in/yourusername" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
@@ -79,7 +85,7 @@ export default function App() {
           <section className="mb-20 animate-fade-in">
             <h2 className="text-5xl font-bold mb-6 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">About</h2>
             <p className="text-gray-300 mb-4 text-xl leading-relaxed">
-              Self-taught full-stack web developer with a passion for crafting innovative web experiences. My expertise spans the entire MERN stack, always pushing the boundaries of technology. With a background in extreme sports, including over 5,000 skydives, I bring a unique perspective to problem-solving in the tech world. I thrive on building community-focused applications that make a real-world impact, combining my keen eye for user-centric design with clean, efficient code to create high-performance digital solutions that exceed expectations.
+              Self-taught web developer with a passion for crafting. My expertise spans the entire MERN stack and beyond. With a background in extreme sports, including over 5,000 skydives, I bring a unique perspective to problem-solving in the tech world. I thrive on building community-focused applications that make a real-world impact.
             </p>
           </section>
 
