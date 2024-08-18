@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaLinkedin, FaTwitter, FaFacebookF } from 'react-icons/fa';
 import { SiTailwindcss, SiExpress, SiMongodb, SiCloudflare, SiStripe, SiVite, SiMongoose } from 'react-icons/si';
 
 // Custom Clerk SVG icon
@@ -46,7 +46,7 @@ const projects = [
   },
   { 
     title: 'Siam Care', 
-    description: 'Thailand community EMS app enhancing emergency response. Features include geolocation rescue beacons and seamless integration with local authorities as well as registered users for rapid medical assistance in emergency situations.', 
+    description: 'Thailand community EMS mobile application enhancing emergency response. Features include geolocation rescue beacons and seamless integration with local authorities as well as registered users for rapid medical assistance in emergency situations.', 
     link: 'https://siam-care.com'
   },
 ];
@@ -57,7 +57,7 @@ const skills = {
     { name: 'CSS', icon: <FaCss3Alt /> },
     { name: 'Tailwind', icon: <SiTailwindcss /> },
     { name: 'JavaScript', icon: <FaJs /> },
-    { name: 'React', icon: <FaReact /> },
+    { name: 'React & React-Native', icon: <FaReact /> },
     { name: 'Vite', icon: <SiVite /> },
   ],
   Backend: [
@@ -73,7 +73,6 @@ const skills = {
     { name: 'Stripe', icon: <SiStripe /> },
   ],
 };
-
 export default function App() {
   const [hoveredSkill, setHoveredSkill] = useState(null);
 
@@ -104,6 +103,12 @@ export default function App() {
             <a href="https://twitter.com/oneiladventures" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
               <FaTwitter className="w-8 h-8" />
             </a>
+            <a href="https://github.com/Wingsuitdude" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="w-8 h-8" />
+            </a>
+            <a href="https://www.facebook.com/Wingsuit94" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF className="w-8 h-8" />
+            </a>
           </div>
         </header>
 
@@ -112,14 +117,8 @@ export default function App() {
             <h2 className="text-5xl font-bold mb-6 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-serif">About</h2>
             <p className="text-gray-300 mb-4 text-xl leading-relaxed">
               Self-taught with a passion for crafting. 
-            
-          
               My expertise spans the entire MERN stack and beyond. 
-           
-         
               I thrive on building community focused applications that make a real world impact.
-            
-            
               5,000 skydives and over a decade of jumping professionally around the world have brought me a unique perspective to problem-solving.
             </p>
           </section>
