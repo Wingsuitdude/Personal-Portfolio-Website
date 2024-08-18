@@ -111,7 +111,16 @@ export default function App() {
           <section className="mb-20 animate-fade-in">
             <h2 className="text-5xl font-bold mb-6 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-serif">About</h2>
             <p className="text-gray-300 mb-4 text-xl leading-relaxed">
-              Self-taught web developer with a passion for crafting. My expertise spans the entire MERN stack and beyond. With a background in extreme sports, including over 5,000 skydives, I bring a unique perspective to problem-solving in the tech world. I thrive on building community-focused applications that make a real-world impact.
+              Self-taught with a passion for crafting. 
+            
+          
+              My expertise spans the entire MERN stack and beyond. 
+           
+         
+              I thrive on building community focused applications that make a real world impact.
+            
+            
+              5,000 skydives and over a decade of jumping professionally around the world have brought me a unique perspective to problem-solving.
             </p>
           </section>
 
