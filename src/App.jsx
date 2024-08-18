@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub } from 'react-icons/fa';
 import { SiTailwindcss, SiExpress, SiMongodb, SiCloudflare, SiStripe, SiVite, SiMongoose } from 'react-icons/si';
@@ -9,6 +9,29 @@ const ClerkIcon = () => (
     <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm0-18.5c-4.687 0-8.5 3.813-8.5 8.5s3.813 8.5 8.5 8.5 8.5-3.813 8.5-8.5-3.813-8.5-8.5-8.5zm0 15.5c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/>
   </svg>
 );
+
+const TypeWriter = ({ text }) => {
+  const [displayText, setDisplayText] = useState('');
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (index < text.length) {
+      const timer = setTimeout(() => {
+        setDisplayText((prev) => prev + text[index]);
+        setIndex((prev) => prev + 1);
+      }, 100); // Adjust the speed of typing here
+
+      return () => clearTimeout(timer);
+    }
+  }, [index, text]);
+
+  return (
+    <span className="inline-block">
+      {displayText}
+      <span className="animate-blink">|</span>
+    </span>
+  );
+};
 
 const projects = [
   { 
@@ -55,7 +78,7 @@ export default function App() {
   const [hoveredSkill, setHoveredSkill] = useState(null);
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-gray-900 via-purple-900 to-violet-800 text-white overflow-x-hidden">
+    <div className="min-h-screen w-full bg-gradient-to-br from-gray-900 via-purple-900 to-violet-800 text-white overflow-x-hidden font-sans">
       <div className="absolute inset-0 z-0 opacity-30">
         {[...Array(50)].map((_, i) => (
           <div key={i} className="star" style={{
@@ -67,10 +90,10 @@ export default function App() {
       </div>
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="text-center mb-20">
-          <h1 className="text-8xl font-extrabold mb-4 animate-pulse bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-            David O'Neil
+          <h1 className="text-8xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 font-serif">
+            <TypeWriter text="David O'Neil" />
           </h1>
-          <p className="text-4xl font-light text-purple-300 mb-2">Software Developer</p>
+          <p className="text-4xl font-light text-purple-300 mb-2 font-sans">Software Developer</p>
           <p className="text-2xl font-medium text-purple-300 mb-8">
             <span className="inline-block px-3 py-1 bg-purple-700 rounded-full mr-2">Full-Stack Web Applications</span>
           </p>
@@ -86,14 +109,14 @@ export default function App() {
 
         <main>
           <section className="mb-20 animate-fade-in">
-            <h2 className="text-5xl font-bold mb-6 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">About</h2>
+            <h2 className="text-5xl font-bold mb-6 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-serif">About</h2>
             <p className="text-gray-300 mb-4 text-xl leading-relaxed">
               Self-taught web developer with a passion for crafting. My expertise spans the entire MERN stack and beyond. With a background in extreme sports, including over 5,000 skydives, I bring a unique perspective to problem-solving in the tech world. I thrive on building community-focused applications that make a real-world impact.
             </p>
           </section>
 
           <section className="mb-20 animate-fade-in">
-            <h2 className="text-5xl font-bold mb-10 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-center">Skills</h2>
+            <h2 className="text-5xl font-bold mb-10 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-center font-serif">Skills</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {Object.entries(skills).map(([category, categorySkills]) => (
                 <div key={category} className="bg-gray-800 bg-opacity-50 rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 flex flex-col items-center text-center">
@@ -117,7 +140,7 @@ export default function App() {
           </section>
 
           <section className="mb-20 animate-fade-in">
-            <h2 className="text-5xl font-bold mb-10 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">Projects</h2>
+            <h2 className="text-5xl font-bold mb-10 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-serif">Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (
                 <div key={index} className="bg-gray-800 bg-opacity-50 rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50">
