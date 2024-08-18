@@ -36,7 +36,7 @@ const TypeWriter = ({ text }) => {
 const projects = [
   { 
     title: 'Our Thailand Wedding', 
-    description: 'Booking website that connects foreigners with a variety of wedding packages across the country, simplifying the process of planning and reserving a destination wedding in Thailand.', 
+    description: 'Booking application that connects foreigners with a variety of wedding packages across the country, simplifying the process of planning and reserving a destination wedding in Thailand.', 
     link: 'https://ourthailandwedding.com' 
   },
   { 
@@ -46,7 +46,7 @@ const projects = [
   },
   { 
     title: 'Siam Care', 
-    description: 'Thailand community EMS mobile application enhancing emergency response. Features include geolocation rescue beacons and seamless integration with local authorities as well as registered users for rapid medical assistance in emergency situations.', 
+    description: 'Medical application enhancing emergency response within Thailand. Main feature includes geolocation rescue beacon and seamless integration with local authorities as well as registered users for rapid assistance in emergency situations.', 
     link: 'https://siam-care.com'
   },
 ];
@@ -94,7 +94,7 @@ export default function App() {
           </h1>
           <p className="text-4xl font-light text-purple-300 mb-2 font-sans">Software Developer</p>
           <p className="text-2xl font-medium text-purple-300 mb-8">
-            <span className="inline-block px-3 py-1 bg-purple-700 rounded-full mr-2">Full-Stack Applications</span>
+            <span className="inline-block px-3 py-1 bg-purple-700 rounded-full mr-2">Full-Stack git statusApplications</span>
           </p>
           <div className="flex justify-center space-x-6 mb-8">
             <a href="https://linkedin.com/in/David-Oneil-Dev" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
