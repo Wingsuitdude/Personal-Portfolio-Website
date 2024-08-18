@@ -98,10 +98,10 @@ export default function App() {
             <span className="inline-block px-3 py-1 bg-purple-700 rounded-full mr-2">Full-Stack Web Applications</span>
           </p>
           <div className="flex justify-center space-x-6 mb-8">
-            <a href="https://linkedin.com/in/yourusername" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/David-Oneil-Dev" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="w-8 h-8" />
             </a>
-            <a href="https://twitter.com/yourusername" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com/oneiladventures" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
               <FaTwitter className="w-8 h-8" />
             </a>
           </div>
