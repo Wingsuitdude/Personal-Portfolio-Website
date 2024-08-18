@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { SiTailwindcss, SiExpress, SiMongodb, SiCloudflare, SiStripe, SiVite, SiMongoose } from 'react-icons/si';
 
 // Custom Clerk SVG icon
@@ -19,7 +19,7 @@ const TypeWriter = ({ text }) => {
       const timer = setTimeout(() => {
         setDisplayText((prev) => prev + text[index]);
         setIndex((prev) => prev + 1);
-      }, 100); // Adjust the speed of typing here
+      }, 100);
 
       return () => clearTimeout(timer);
     }
@@ -99,10 +99,10 @@ export default function App() {
           </p>
           <div className="flex justify-center space-x-6 mb-8">
             <a href="https://linkedin.com/in/yourusername" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
-              LinkedIn
+              <FaLinkedin className="w-8 h-8" />
             </a>
-            <a href="mailto:your.email@example.com" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110">
-              Email
+            <a href="https://twitter.com/yourusername" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
+              <FaTwitter className="w-8 h-8" />
             </a>
           </div>
         </header>
