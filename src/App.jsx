@@ -44,8 +44,7 @@ const skills = {
     { name: 'Solidity', icon: <SiSolidity /> },
     { name: 'Smart Contracts', icon: <SiSolidity /> },
   ],
-  Other: [
-    { name: 'Mobile App Development', icon: <FaReact /> },
+  'Mobile App Development': [
     { name: 'React-Native', icon: <FaReact /> },
   ],
 };
