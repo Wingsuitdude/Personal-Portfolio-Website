@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaLinkedin, FaTwitter, FaFacebookF } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaLinkedin, FaTwitter, FaFacebookF, FaTelegramPlane } from 'react-icons/fa';
 import { SiTailwindcss, SiExpress, SiMongodb, SiCloudflare, SiStripe, SiVite, SiMongoose } from 'react-icons/si';
 
 // Custom Clerk SVG icon
@@ -73,6 +73,7 @@ const skills = {
     { name: 'Stripe', icon: <SiStripe /> },
   ],
 };
+
 export default function App() {
   const [hoveredSkill, setHoveredSkill] = useState(null);
 
@@ -94,7 +95,7 @@ export default function App() {
           </h1>
           <p className="text-4xl font-light text-purple-300 mb-2 font-sans">Software Developer</p>
           <p className="text-2xl font-medium text-purple-300 mb-8">
-            <span className="inline-block px-3 py-1 bg-purple-700 rounded-full mr-2">Full-Stack git statusApplications</span>
+            <span className="inline-block px-3 py-1 bg-purple-700 rounded-full mr-2">Full-Stack Applications</span>
           </p>
           <div className="flex justify-center space-x-6 mb-8">
             <a href="https://linkedin.com/in/David-Oneil-Dev" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
@@ -108,6 +109,9 @@ export default function App() {
             </a>
             <a href="https://www.facebook.com/Wingsuit94" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
               <FaFacebookF className="w-8 h-8" />
+            </a>
+            <a href="https://t.me/Drippdaddy" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
+              <FaTelegramPlane className="w-8 h-8" />
             </a>
           </div>
         </header>
