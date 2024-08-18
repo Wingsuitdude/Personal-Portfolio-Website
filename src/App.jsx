@@ -5,18 +5,18 @@ import { SiTailwindcss, SiExpress, SiMongodb, SiVite, SiCloudflare, SiSolidity, 
 
 const projects = [
   { 
-    title: 'O\'Neil Services', 
-    description: 'My parents\' family business website showcasing 25 years of accumulated skills that they offer as services to our local community.', 
-    link: 'https://oneil-services.com' 
+    title: 'Our Thailand Wedding', 
+    description: 'Booking website that connects foreigners with a variety of wedding packages across the country, simplifying the process of planning and reserving a destination wedding in Thailand.', 
+    link: 'https://ourthailandwedding.com' 
   },
   { 
     title: 'Based Bases', 
-    description: 'Decentralized Web3 social dApp for digital co-working, profit sharing, and crowdfunding/freelance work through what are called "Bases" of Operation which function like a guild or corporations', 
+    description: 'Social application for digital collaboration, freelancing, and project funding. This platform introduces the concept of "Bases of Operation," which function as dynamic, self-organizing guilds or corporations in the digital space.', 
     link: 'https://basedbases.com' 
   },
   { 
     title: 'Siam Care', 
-    description: 'Innovative Thailand community EMS app enhancing emergency response. Features include real-time geolocation-based rescue beacons and seamless API integration with local authorities for rapid medical assistance in both emergency and non-emergency situations.', 
+    description: 'Thailand community EMS app enhancing emergency response. Features include real-time geolocation-based rescue beacons and seamless API integration with local authorities and registered civilians for rapid medical assistance in both emergency and non-emergency situations.', 
     link: 'https://siam-care.com'
   },
 ];
