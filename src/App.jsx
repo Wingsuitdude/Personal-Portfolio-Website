@@ -38,7 +38,7 @@ const skills = {
     { name: 'Vite', icon: <SiVite /> },
   ],
   Backend: [
-    { name: 'Node.js', icon: <FaNodeJs /> },
+    { name: 'Node', icon: <FaNodeJs /> },
     { name: 'Express', icon: <SiExpress /> },
     { name: 'MongoDB', icon: <SiMongodb /> },
     { name: 'Mongoose', icon: <SiMongoose /> },
