@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub } from 'react-icons/fa';
-import { SiTailwindcss, SiExpress, SiMongodb, SiCloudflare, SiStripe } from 'react-icons/si';
+import { SiTailwindcss, SiExpress, SiMongodb, SiCloudflare, SiStripe, SiVite, SiMongoose } from 'react-icons/si';
 
 // Custom Clerk SVG icon
 const ClerkIcon = () => (
@@ -35,11 +35,13 @@ const skills = {
     { name: 'Tailwind', icon: <SiTailwindcss /> },
     { name: 'JavaScript', icon: <FaJs /> },
     { name: 'React', icon: <FaReact /> },
+    { name: 'Vite', icon: <SiVite /> },
   ],
   Backend: [
     { name: 'Node.js', icon: <FaNodeJs /> },
     { name: 'Express', icon: <SiExpress /> },
     { name: 'MongoDB', icon: <SiMongodb /> },
+    { name: 'Mongoose', icon: <SiMongoose /> },
   ],
   DevOps: [
     { name: 'Cloudflare', icon: <SiCloudflare /> },
