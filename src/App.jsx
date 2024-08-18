@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub } from 'react-icons/fa';
-import { SiTailwindcss, SiExpress, SiMongodb, SiCloudflare } from 'react-icons/si';
+import { SiTailwindcss, SiExpress, SiMongodb, SiCloudflare, SiStripe } from 'react-icons/si';
 
 // Custom Clerk SVG icon
 const ClerkIcon = () => (
@@ -45,6 +45,7 @@ const skills = {
     { name: 'Cloudflare', icon: <SiCloudflare /> },
     { name: 'GitHub', icon: <FaGithub /> },
     { name: 'Clerk', icon: <ClerkIcon /> },
+    { name: 'Stripe', icon: <SiStripe /> },
   ],
 };
 
