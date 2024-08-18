@@ -94,7 +94,7 @@ export default function App() {
           </h1>
           <p className="text-4xl font-light text-purple-300 mb-2 font-sans">Software Developer</p>
           <p className="text-2xl font-medium text-purple-300 mb-8">
-            <span className="inline-block px-3 py-1 bg-purple-700 rounded-full mr-2">Full-Stack Web Applications</span>
+            <span className="inline-block px-3 py-1 bg-purple-700 rounded-full mr-2">Full-Stack Applications</span>
           </p>
           <div className="flex justify-center space-x-6 mb-8">
             <a href="https://linkedin.com/in/David-Oneil-Dev" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
