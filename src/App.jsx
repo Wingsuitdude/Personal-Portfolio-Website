@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub } from 'react-icons/fa';
-import { SiTailwindcss, SiExpress, SiMongodb, SiVite, SiCloudflare, SiSolidity, SiWeb3Dotjs } from 'react-icons/si';
+import { SiTailwindcss, SiExpress, SiMongodb, SiCloudflare } from 'react-icons/si';
 
 const projects = [
   { 
@@ -32,20 +32,12 @@ const skills = {
   Backend: [
     { name: 'Node.js', icon: <FaNodeJs /> },
     { name: 'Express', icon: <SiExpress /> },
-  ],
-  Database: [
     { name: 'MongoDB', icon: <SiMongodb /> },
   ],
+  
   DevOps: [
     { name: 'Cloudflare', icon: <SiCloudflare /> },
     { name: 'GitHub', icon: <FaGithub /> },
-  ],
-  'Web3 & Blockchain': [
-    { name: 'Solidity', icon: <SiSolidity /> },
-    { name: 'Smart Contracts', icon: <SiSolidity /> },
-  ],
-  'Mobile App Development': [
-    { name: 'React-Native', icon: <FaReact /> },
   ],
 };
 
@@ -70,14 +62,10 @@ export default function App() {
           </h1>
           <p className="text-4xl font-light text-purple-300 mb-2">Software Developer</p>
           <p className="text-2xl font-medium text-purple-300 mb-8">
-            <span className="inline-block px-3 py-1 bg-purple-700 rounded-full mr-2">MERN Stack</span>
-            <span className="inline-block px-3 py-1 bg-purple-700 rounded-full mr-2">Web3</span>
-            <span className="inline-block px-3 py-1 bg-purple-700 rounded-full">Mobile</span>
+            <span className="inline-block px-3 py-1 bg-purple-700 rounded-full mr-2">Full-Stack Web Applications</span>
           </p>
           <div className="flex justify-center space-x-6 mb-8">
-            <a href="https://github.com/yourusername" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
+            
             <a href="https://linkedin.com/in/yourusername" className="text-gray-300 hover:text-white transition duration-300 transform hover:scale-110" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
@@ -91,7 +79,7 @@ export default function App() {
           <section className="mb-20 animate-fade-in">
             <h2 className="text-5xl font-bold mb-6 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">About</h2>
             <p className="text-gray-300 mb-4 text-xl leading-relaxed">
-              Self-taught software developer with a passion for crafting innovative web and mobile experiences. My expertise spans from MERN stack applications to cutting-edge Web3 platforms, always pushing the boundaries of technology. With a background in extreme sports, including over 5,000 skydives, I bring a unique perspective to problem-solving in the tech world. I thrive on building community-focused apps that make a real-world impact, combining my keen eye for user-centric design with clean, efficient code to create high-performance digital solutions that exceed expectations.
+              Self-taught full-stack web developer with a passion for crafting innovative web experiences. My expertise spans the entire MERN stack, always pushing the boundaries of technology. With a background in extreme sports, including over 5,000 skydives, I bring a unique perspective to problem-solving in the tech world. I thrive on building community-focused applications that make a real-world impact, combining my keen eye for user-centric design with clean, efficient code to create high-performance digital solutions that exceed expectations.
             </p>
           </section>
 
