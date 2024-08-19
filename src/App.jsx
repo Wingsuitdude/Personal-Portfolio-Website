@@ -79,12 +79,13 @@ export default function App() {
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-gray-900 via-purple-900 to-violet-800 text-white overflow-x-hidden font-sans">
-      <div className="absolute inset-0 z-0 opacity-30">
-        {[...Array(50)].map((_, i) => (
+      <div className="fixed inset-0 z-0 opacity-30">
+        {[...Array(100)].map((_, i) => (
           <div key={i} className="star" style={{
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
-            animationDelay: `${Math.random() * 5}s`
+            animationDuration: `${Math.random() * 3 + 2}s`,
+            animationDelay: `${Math.random() * 2}s`
           }}></div>
         ))}
       </div>
