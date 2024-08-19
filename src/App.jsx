@@ -126,7 +126,7 @@ export default function App() {
       <MovingDotsBackground />
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="text-center mb-20">
-          <h1 className="text-6xl font-extrabold mb-4 text-white font-serif glow-text">
+          <h1 className="text-5xl font-extrabold mb-4 text-white font-serif glow-text">
             <TypeWriter text="David O'Neil" onComplete={() => setNameTyped(true)} />
           </h1>
           <p className="text-4xl font-light text-purple-300 mb-2 font-sans">Software Developer</p>
@@ -143,7 +143,7 @@ export default function App() {
         <main>
           <section className="mb-20 animate-fade-in">
             {selfTaughtTyped && (
-              <h2 className="text-5xl font-bold mb-10 animate-drop-in white-glow-reduced bg-clip-text text-transparent bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 text-center font-serif">
+              <h2 className="text-3xl font-bold mb-10 animate-drop-in white-glow-reduced bg-clip-text text-transparent bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 text-center font-serif">
                 Full-Stack Applications
               </h2>
             )}
