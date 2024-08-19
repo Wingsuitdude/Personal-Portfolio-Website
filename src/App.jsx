@@ -167,7 +167,7 @@ export default function App() {
 
         <main>
           <section className="mb-20 animate-fade-in">
-            <h2 className="text-5xl font-bold mb-6 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-serif">About</h2>
+            <h2 className="text-5xl font-bold mb-6 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-serif text-center">About</h2>
             <p className="text-gray-300 mb-4 text-xl leading-relaxed">
               Self-taught with a passion for crafting. 
               My expertise spans the entire MERN stack and beyond. 
@@ -201,11 +201,11 @@ export default function App() {
           </section>
 
           <section className="mb-20 animate-fade-in">
-            <h2 className="text-5xl font-bold mb-10 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-serif">Applications</h2>
+            <h2 className="text-5xl font-bold mb-10 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-center font-serif">Applications</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (
                 <div key={index} className="bg-gray-800 bg-opacity-50 rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50">
-                  <h3 className="text-2xl font-bold mb-3 text-purple-300">{project.title}</h3>
+                  <h3 className="text-2xl font-bold mb-3 text-purple-300 text-center">{project.title}</h3>
                   <p className="text-gray-400 mb-4">{project.description}</p>
                   <a href={project.link} className="inline-block bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition duration-300 transform hover:scale-105 font-medium" target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
