@@ -126,7 +126,7 @@ export default function App() {
       <MovingDotsBackground />
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="text-center mb-20">
-          <h1 className="text-8xl font-extrabold mb-4 text-white font-serif glow-text">
+          <h1 className="text-6xl font-extrabold mb-4 text-white font-serif glow-text">
             <TypeWriter text="David O'Neil" onComplete={() => setNameTyped(true)} />
           </h1>
           <p className="text-4xl font-light text-purple-300 mb-2 font-sans">Software Developer</p>
