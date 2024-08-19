@@ -166,15 +166,14 @@ export default function App() {
         </header>
 
         <main>
-          <section className="mb-20 animate-fade-in">
-            <h2 className="text-5xl font-bold mb-6 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-serif text-center">About</h2>
-            <p className="text-gray-300 mb-4 text-xl leading-relaxed">
-              Self-taught with a passion for crafting. 
-              My expertise spans the entire MERN stack and beyond. 
-              I thrive on building community focused applications that make a real world impact.
-              5,000 skydives and over a decade of jumping professionally around the world have brought me a unique perspective to problem-solving.
-            </p>
-          </section>
+  <section className="mb-20 animate-fade-in">
+    <div className="text-white text-xl leading-relaxed space-y-4">
+      <p className="text-center">Self-taught with a passion for crafting.</p>
+      <p className="text-center">My expertise spans the entire MERN stack and beyond.</p>
+      <p className="text-center">I thrive on building community focused applications that make a real world impact.</p>
+      <p className="text-center">With 5,000 skydives and over a decade of jumping professionally around the world, I have a unique perspective to problem-solving.</p>
+    </div>
+  </section>
 
           <section className="mb-20 animate-fade-in">
             <h2 className="text-5xl font-bold mb-10 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-center font-serif">Tech Stack</h2>
