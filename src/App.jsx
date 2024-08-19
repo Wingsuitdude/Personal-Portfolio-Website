@@ -166,14 +166,14 @@ export default function App() {
         </header>
 
         <main>
-  <section className="mb-20 animate-fade-in">
-    <div className="text-white text-xl leading-relaxed space-y-4">
-      <p className="text-center">Self-taught with a passion for crafting.</p>
-      <p className="text-center">My expertise spans the entire MERN stack and beyond.</p>
-      <p className="text-center">I thrive on building community focused applications that make a real world impact.</p>
-      <p className="text-center">With 5,000 skydives and over a decade of jumping professionally around the world, I have a unique perspective to problem-solving.</p>
-    </div>
-  </section>
+          <section className="mb-20 animate-fade-in">
+            <div className="text-white text-xl leading-relaxed space-y-4">
+              <p className="text-center">Self-taught with a passion for crafting.</p>
+              <p className="text-center">My expertise spans the entire MERN stack and beyond.</p>
+              <p className="text-center">I thrive on building community focused applications that make a real world impact.</p>
+              <p className="text-center">With 5,000 skydives and over a decade of jumping professionally around the world, I have a unique perspective to problem-solving.</p>
+            </div>
+          </section>
 
           <section className="mb-20 animate-fade-in">
             <h2 className="text-5xl font-bold mb-10 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-center font-serif">Tech Stack</h2>
@@ -203,10 +203,17 @@ export default function App() {
             <h2 className="text-5xl font-bold mb-10 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-center font-serif">Applications</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (
-                <div key={index} className="bg-gray-800 bg-opacity-50 rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50">
+                <div key={index} className="bg-gray-800 bg-opacity-50 rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 flex flex-col items-center">
                   <h3 className="text-2xl font-bold mb-3 text-purple-300 text-center">{project.title}</h3>
-                  <p className="text-gray-400 mb-4">{project.description}</p>
-                  <a href={project.link} className="inline-block bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition duration-300 transform hover:scale-105 font-medium" target="_blank" rel="noopener noreferrer">View Project</a>
+                  <p className="text-gray-400 mb-4 text-center">{project.description}</p>
+                  <a 
+                    href={project.link} 
+                    className="inline-block bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition duration-300 transform hover:scale-105 font-medium text-center"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    {new URL(project.link).hostname}
+                  </a>
                 </div>
               ))}
             </div>
