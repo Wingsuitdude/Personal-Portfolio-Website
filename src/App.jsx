@@ -144,7 +144,7 @@ export default function App() {
           <section className="mb-20 animate-fade-in">
             {selfTaughtTyped && (
               <h2 className="text-5xl font-bold mb-10 animate-drop-in white-glow-reduced bg-clip-text text-transparent bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 text-center font-serif">
-                Full-Stack Web Applications
+                Full-Stack Applications
               </h2>
             )}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
