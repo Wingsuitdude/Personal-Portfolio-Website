@@ -96,10 +96,9 @@ const skills = {
   Frontend: [
     { name: 'HTML', icon: <FaHtml5 /> },
     { name: 'CSS', icon: <FaCss3Alt /> },
+    { name: 'Tailwind', icon: <SiTailwindcss /> },
     { name: 'JavaScript', icon: <FaJs /> },
     { name: 'React', icon: <FaReact /> },
-    { name: 'Tailwind', icon: <SiTailwindcss /> },
-    { name: 'Vite', icon: <SiVite /> },
   ],
   Backend: [
     { name: 'Node', icon: <FaNodeJs /> },
@@ -109,7 +108,6 @@ const skills = {
   ],
   DevOps: [
     { name: 'Cloudflare', icon: <SiCloudflare /> },
-    { name: 'Clerk', icon: <ClerkIcon /> },
     { name: 'Stripe', icon: <SiStripe /> },
     { name: 'Supabase', icon: <SiSupabase /> },
     { name: 'GitHub', icon: <FaGithub /> },
@@ -120,6 +118,20 @@ export default function App() {
   const [hoveredSkill, setHoveredSkill] = useState(null);
   const [nameTyped, setNameTyped] = useState(false);
   const [selfTaughtTyped, setSelfTaughtTyped] = useState(false);
+  const [headingVisible, setHeadingVisible] = useState(false);
+  const [categoriesVisible, setCategoriesVisible] = useState(false);
+
+  useEffect(() => {
+    if (selfTaughtTyped) {
+      setTimeout(() => setHeadingVisible(true), 500);
+    }
+  }, [selfTaughtTyped]);
+
+  useEffect(() => {
+    if (headingVisible) {
+      setTimeout(() => setCategoriesVisible(true), 1000); // Wait 1 second after heading is visible
+    }
+  }, [headingVisible]);
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-gray-900 via-purple-900 to-violet-800 text-white overflow-x-hidden font-sans">
@@ -141,15 +153,20 @@ export default function App() {
         </header>
 
         <main>
-          <section className="mb-20 animate-fade-in">
+          <section className="mb-20">
             {selfTaughtTyped && (
-              <h2 className="text-3xl font-bold mb-10 animate-drop-in white-glow-reduced bg-clip-text text-transparent bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 text-center font-serif">
-                Full-Stack Applications
+              <h2 className={`text-5xl font-bold mb-10 text-white text-center font-serif animate-breathe ${headingVisible ? 'animate-slide-up' : 'opacity-0 translate-y-full'}`}>
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-500 via-purple-500 to-pink-500 animate-shine">
+                  Full-Stack Applications
+                </span>
               </h2>
             )}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {Object.entries(skills).map(([category, categorySkills]) => (
-                <div key={category} className="bg-gray-800 bg-opacity-50 rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 flex flex-col items-center text-center">
+                <div 
+                  key={category} 
+                  className={`bg-gray-800 bg-opacity-50 rounded-lg p-6 transform transition duration-500 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 flex flex-col items-center text-center ${categoriesVisible ? 'animate-fade-in' : 'opacity-0'}`}
+                >
                   <h3 className="text-2xl font-bold mb-4 text-purple-300">{category}</h3>
                   <div className="flex flex-wrap justify-center gap-3">
                     {categorySkills.map((skill, index) => (
