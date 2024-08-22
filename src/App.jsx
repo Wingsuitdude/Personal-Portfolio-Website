@@ -103,13 +103,12 @@ const skills = {
   Backend: [
     { name: 'Node', icon: <FaNodeJs /> },
     { name: 'Express', icon: <SiExpress /> },
-    { name: 'MongoDB', icon: <SiMongodb /> },
-    { name: 'Mongoose', icon: <SiMongoose /> },
+    { name: 'Supabase', icon: <SiSupabase /> },
+    
   ],
   DevOps: [
     { name: 'Cloudflare', icon: <SiCloudflare /> },
     { name: 'Stripe', icon: <SiStripe /> },
-    { name: 'Supabase', icon: <SiSupabase /> },
     { name: 'GitHub', icon: <FaGithub /> },
   ],
 };
