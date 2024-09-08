@@ -94,21 +94,15 @@ const MovingDotsBackground = () => {
 
 const skills = {
   Frontend: [
-    { name: 'HTML', icon: <FaHtml5 /> },
-    { name: 'CSS', icon: <FaCss3Alt /> },
     { name: 'Tailwind', icon: <SiTailwindcss /> },
-    { name: 'JavaScript', icon: <FaJs /> },
     { name: 'React', icon: <FaReact /> },
   ],
   Backend: [
-    { name: 'Node', icon: <FaNodeJs /> },
-    { name: 'Express', icon: <SiExpress /> },
     { name: 'Supabase', icon: <SiSupabase /> },
     
   ],
   DevOps: [
     { name: 'Cloudflare', icon: <SiCloudflare /> },
-    { name: 'Stripe', icon: <SiStripe /> },
     { name: 'GitHub', icon: <FaGithub /> },
   ],
 };
